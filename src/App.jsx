@@ -1,6 +1,7 @@
 import './App.css'
 import About from './components/About'
 import Banner from './components/Banner'
+import EndCredits from './components/EndCredits'
 import Events from './components/Events'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
@@ -18,6 +19,7 @@ function App() {
       <Gallery />
       <Events />
       <Footer />
+      <EndCredits />
     </>
   )
 }
