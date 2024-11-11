@@ -28,7 +28,7 @@ const Gallery = () => {
                     <img src="/images/galleryPic5.png" alt="" />
                 </div>
             </div>
-            <div className='flex gap-3 px-3'>
+            <div className='flex flex-col xl:flex-row gap-3 px-3'>
                 <img src="/images/Rectangle 171.png" className='w-[300px]' alt="" />
                 <img src="/images/Rectangle 171.png" className='w-[300px]' alt="" />
                 <img src="/images/Rectangle 171.png" className='w-[300px]' alt="" />

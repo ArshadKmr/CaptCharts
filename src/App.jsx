@@ -1,25 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import About from './components/About'
-import Banner from './components/Banner'
-import EndCredits from './components/EndCredits'
-import Events from './components/Events'
-import Footer from './components/Footer'
-import Gallery from './components/Gallery'
-import NavBar from './components/NavBar'
-import UserReview from './components/UserReview'
+import Login from './components/login/Login'
+import Home from './components/Home'
+import Register from './components/register/Register'
+import Post from './components/posts/Post'
+
 
 function App() {
 
   return (
     <>
-      <NavBar />
-      <Banner />
-      <About />
-      <UserReview />
-      <Gallery />
-      <Events />
-      <Footer />
-      <EndCredits />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/posts' element={<Post />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
